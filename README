@@ -1,0 +1,4 @@
+Files and projects for 'Web Development with Node and Express, Leveraging the Javascript Stack' by O'Reilly, Ethan Brown.
+
+intro_proj - Contains intro project displaying simple web server in node serving a home, about, and not found page.
+
