@@ -2,13 +2,20 @@
   "name": "meadowlark",
   "version": "1.0.0",
   "description": "Main project site for 'Web Development with Node and Express, Leveraging the Javascript Stack' by Ethan Brown, O'Reilly.",
-  "main": "index.js",
+  "main": "meadowlark.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Harrison Wong",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0",
+    "nodemon": "^1.14.12",
+    "zombie": "^5.0.7"
   }
 }

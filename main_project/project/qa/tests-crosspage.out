@@ -1,0 +1,33 @@
+
+
+  Cross-Page Tests
+
+http://localhost:3000/tours/hood-river
+false
+    1) requesting a group rate quote from the hood river tour page should populate the referrer field
+    2) requesting a group rate from the oregon coast tour page populate the referrer field
+    ✓ visiting the "request group rate" page directly should result in an empty referrer field (174ms)
+
+
+  1 passing (747ms)
+  2 failing
+
+  1) Cross-Page Tests
+       requesting a group rate quote from the hood river tour page should populate the referrer field:
+     Uncaught AssertionError: Unspecified AssertionError
+      at qa/tests-crosspage.js:21:17
+      at EventLoop.done (node_modules/zombie/lib/eventloop.js:589:11)
+      at Immediate.<anonymous> (node_modules/zombie/lib/eventloop.js:688:71)
+
+  2) Cross-Page Tests
+       requesting a group rate from the oregon coast tour page populate the referrer field:
+     Uncaught AssertionError [ERR_ASSERTION]: No link matching '.requestGroupRate'
+      at Browser.clickLink (node_modules/zombie/lib/index.js:697:7)
+      at qa/tests-crosspage.js:31:21
+      at Browser.done (node_modules/zombie/lib/eventloop.js:589:11)
+      at node_modules/zombie/lib/document.js:826:13
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:160:7)
+
+
+
