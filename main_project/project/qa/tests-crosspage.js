@@ -4,6 +4,7 @@ var browser;
 
 suite('Cross-Page Tests', function() {
     setup(function() {
+        this.timeout(5000);
         browser = new Browser();
     });
 
@@ -12,13 +13,8 @@ suite('Cross-Page Tests', function() {
         var referrer = 'http://localhost:3000/tours/hood-river';
         browser.visit(referrer, function() {
             browser.clickLink('.requestGroupRate', function() {
-                // DEBUG
-                var t0 = browser.field('referrer').value === referrer;
-                console.log(browser.field('referrer').value);
-                console.log(referrer);
-                console.log(t0);
-
-                assert(browser.field('referrer').value === referrer);
+                assert(browser.field('referrer').value === referrer,
+                    'Referrer should be: ' + referrer + ' but was: ' + browser.field('referrer').value);
                 done();
             });
         });
@@ -29,7 +25,8 @@ suite('Cross-Page Tests', function() {
         var referrer = 'http://localhost:3000/tours/oregon-coast';
         browser.visit(referrer, function() {
             browser.clickLink('.requestGroupRate', function() {
-                assert(browser.field('referrer').value === referrer);
+                assert(browser.field('referrer').value === referrer,
+                    'Referrer should be: ' + referrer + ' but was: ' + browser.field('referrer').value);
                 done();
             });
         });

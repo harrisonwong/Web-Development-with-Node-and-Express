@@ -1,3 +1,5 @@
 # Ignore packages installed by npm
 main_project/project/node_modules
 main_project/project/old_node_modules
+*old_*
+.idea
