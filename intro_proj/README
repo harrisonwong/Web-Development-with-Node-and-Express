@@ -1,4 +1,0 @@
-intro_proj contains simple node web server containing a home, about, and not-found page.
-To start up web server: node helloWorld.js
-Then go to http://localhost:3000
-
