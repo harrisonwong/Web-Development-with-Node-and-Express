@@ -1,4 +1,6 @@
 language: node_js
 node_js:
- - "stable"
+ - "lts/*"
+ - "4"
+before_install: if [[ `npm -v` != 4* ]]; then npm i -g npm@4; fi
 script: grunt
