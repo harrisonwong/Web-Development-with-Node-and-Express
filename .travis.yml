@@ -1,6 +1,6 @@
 language: node_js
 before_install:
- - if [[ `npm -v` != 4* ]]; then npm i -g npm@4; fi
+ - if [[ `npm -v` != 3* ]]; then npm i -g npm@3.5.2; fi
 before_script:
  - npm install -g grunt-cli
 script: grunt
