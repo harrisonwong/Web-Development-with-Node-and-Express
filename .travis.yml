@@ -1,3 +1,5 @@
 language: node_js
-before_install: if [[ `npm -v` != 4* ]]; then npm i -g npm@4; fi
+before_install:
+ - if [[ `npm -v` != 4* ]]; then npm i -g npm@4; fi
+ - sudo npm install -g grunt
 script: grunt
