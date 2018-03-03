@@ -3,4 +3,6 @@ before_install:
  - if [[ `npm -v` != 3* ]]; then npm i -g npm@3.5.2; fi
 before_script:
  - npm install -g grunt-cli
-script: grunt
+script:
+ - node meadowlark.js
+ - grunt
