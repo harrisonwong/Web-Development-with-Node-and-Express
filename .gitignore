@@ -1,0 +1,5 @@
+# Ignore packages installed by npm
+node_modules
+old_node_modules
+*old_*
+.idea
