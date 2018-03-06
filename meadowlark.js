@@ -45,7 +45,7 @@ function getWeather() {
             }
         ]
     };
-};
+}
 
 
 app.use(function(req, res, next) {
