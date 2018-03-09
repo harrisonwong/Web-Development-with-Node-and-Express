@@ -4,7 +4,6 @@ before_install:
 before_script:
  - npm install -g grunt-cli@1.2.0
  - sudo apt update
- - sudo apt upgrade
  - sudo apt install linkchecker
 script:
  - node meadowlark.js &
