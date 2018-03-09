@@ -3,6 +3,7 @@ before_install:
  - if [[ `npm -v` != 3* ]]; then npm i -g npm@3.5.2; fi
 before_script:
  - npm install -g grunt-cli@1.2.0
+ - sudo apt update
  - sudo apt install linkchecker=9.3-1
 script:
  - node meadowlark.js &
