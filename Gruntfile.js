@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         },
         exec: { // Link checking.
             // Main site
-            meadowlark: { cmd: 'linkchecker http://localhost:3000' }
+            meadowlark: { cmd: 'linkchecker --no-warnings http://localhost:3000' }
 
             // Weather widget
             // weatherPortland: { cmd: 'linkchecker http://www.wunderground.com/US/OR/Portland.html'},
