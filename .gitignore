@@ -1,6 +1,5 @@
 # Ignore packages installed by npm
-node_modules
-old_node_modules
+node_modules/
 *old_*
 .idea
 .*swp
