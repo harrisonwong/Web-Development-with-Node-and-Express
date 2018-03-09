@@ -19,15 +19,15 @@ module.exports = function(grunt) {
         },
         exec: { // Link checking.
             // Main site
-            meadowlark: { cmd: 'linkchecker http://localhost:3000' },
+            meadowlark: { cmd: 'linkchecker http://localhost:3000' }
 
             // Weather widget
-            weatherPortland: { cmd: 'linkchecker http://www.wunderground.com/US/OR/Portland.html'},
-            weatherBend: { cmd: 'linkchecker http://wunderground.com/US/OR/Bend.html'},
-            weatherManzanita: { cmd: 'linkchecker http://wunderground.com/US/OR/Manzanita.html'},
-            weatherCloudy: { cmd: 'linkchecker http://icons-ak.wxug.com/i/c/k/cloudy.gif'},
-            weatherPartlyCloudy: { cmd: 'linkchecker http://icons-ak.wxug.com/i/c/k/partlycloudy.gif'},
-            weatherRain: { cmd: 'linkchecker http://icons-ak.wxug.com/i/c/k/rain.gif'}
+            // weatherPortland: { cmd: 'linkchecker http://www.wunderground.com/US/OR/Portland.html'},
+            // weatherBend: { cmd: 'linkchecker http://wunderground.com/US/OR/Bend.html'},
+            // weatherManzanita: { cmd: 'linkchecker http://wunderground.com/US/OR/Manzanita.html'},
+            // weatherCloudy: { cmd: 'linkchecker http://icons-ak.wxug.com/i/c/k/cloudy.gif'},
+            // weatherPartlyCloudy: { cmd: 'linkchecker http://icons-ak.wxug.com/i/c/k/partlycloudy.gif'},
+            // weatherRain: { cmd: 'linkchecker http://icons-ak.wxug.com/i/c/k/rain.gif'}
         }
     });
 
