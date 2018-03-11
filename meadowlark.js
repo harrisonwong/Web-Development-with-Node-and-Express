@@ -2,7 +2,18 @@ var express = require('express');
 var app = express();
 
 // Setup handlebars view engine.
-var handlebars = require('express-handlebars').create({ defaultLayout:'main' });
+var handlebars = require('express-handlebars').create({
+    defaultLayout:'main',
+    helpers: {
+        // Setting up sections.
+        section: function(name, options) {
+            if(!this._sections) this._sections = {};
+            this._sections[name] = options.fn(this);
+            return null;
+        }
+    }
+});
+
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
@@ -76,6 +87,23 @@ app.get('/tours/oregon-coast', function(req, res) {
 
 app.get('/tours/request-group-rate', function(req, res) {
     res.render('tours/request-group-rate');
+});
+
+app.get('/nursery-rhyme', function(req, res) {
+    res.render('nursery-rhyme');
+});
+
+app.get('/data/nursery-rhyme', function(req, res) {
+    res.json({
+        animal: 'squirrel',
+        bodyPart: 'tail',
+        adjective: 'bushy',
+        noun: 'heck'
+    });
+});
+
+app.get('/test_sections', function(req, res) {
+    res.render('test_sections');
 });
 
 
